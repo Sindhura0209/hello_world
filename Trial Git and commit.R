@@ -12,7 +12,7 @@ p<- ggplot(data = data_heatwaves,
            mapping = aes(x=year, y=temp_mean,
                          group = paste(fishery, eu_rnpa))) +
   
-  geom_line() +
+  geom_line(color = "steelblue") +
   facet_wrap(~ fishery, ncol = 2, scales = "free_y")
 
 p
